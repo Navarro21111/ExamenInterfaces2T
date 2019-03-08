@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <ImageView
+            android:id="@+id/imgPlanet"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="500dp"
+            android:src="@drawable/planet_earth" />
+
+    </FrameLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/rocket_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="109dp"
+        android:text="@string/generation"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tvLongText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="217dp"
+        android:text="@string/turra"
+        android:textSize="14sp"
+        tools:text="@string/turra" />
+
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="631dp"
+        android:layout_marginBottom="50dp"
+        android:text="STAY"
+        style="@style/rightButton"/>
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="632dp"
+        android:layout_marginBottom="50dp"
+        android:text="LEAVE"
+        android:background="@drawable/b_boton"
+        style="@style/leftButton"/>
+
+</RelativeLayout>
